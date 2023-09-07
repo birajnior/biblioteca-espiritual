@@ -17,7 +17,7 @@ h1 {
 }
 
 h2 {
-  color: #154580;
+  color: #0B1112;
   font-weight: bold;
   font-size: 2rem;
   text-align: center;
@@ -37,20 +37,21 @@ h2 {
 }
 
 .botao {
-  background: #154580;
+  background: #162425;
   color: #ffffff;
   max-width: 270px;
   width: 250px;
   padding: 1rem;
   margin: 0 auto;
-  border: 2px solid #154580;
+  border: 2px solid #162425;
   border-radius: 10px;
   transition: 0.5s ease;
 }
 
 .botao:hover {
-  border: 2px solid #84EEC1;
-  color: #84EEC1;
+  border: 2px solid #bafcff;
+  color: #bafcff;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {

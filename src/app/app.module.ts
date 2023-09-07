@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { RodapeComponent } from './componentes/rodape/rodape.component';
+import { CriarPassagensComponent } from './componentes/passagens/criar-passagens/criar-passagens.component';
+import { ListarPassagensComponent } from './componentes/passagens/listar-passagens/listar-passagens.component';
+import { PassagemComponent } from './componentes/passagens/passagem/passagem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CabecalhoComponent,
-    RodapeComponent
+    RodapeComponent,
+    CriarPassagensComponent,
+    ListarPassagensComponent,
+    PassagemComponent
   ],
   imports: [
     BrowserModule,

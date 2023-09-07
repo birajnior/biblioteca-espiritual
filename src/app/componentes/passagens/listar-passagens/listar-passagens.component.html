@@ -1,0 +1,17 @@
+<section class="container">
+  <header class="header d-flex">
+    <h2 class="ff-crimson-pro"> Meu Mural </h2>
+    <button routerLink="/criarPassagens" class="botao">Adicionar passagem</button>
+  </header>
+  <div class="mural" *ngIf="listaPassagens.length > 0, else semPassagens">
+    <div *ngFor="let passagem of listaPassagens">
+      <app-passagem [passagem]="passagem"></app-passagem>
+      <!-- Esse  Property Binding => []  está referindo a class criada no passam.component.ts  -->
+    </div>
+  </div>
+</section>
+<ng-template #semPassagens>
+<div class="ff-crimson-pro sem-passagens">
+  <p>Ainda não há passagens cadastradas!</p>
+</div>
+</ng-template>

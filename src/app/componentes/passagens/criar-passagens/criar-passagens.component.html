@@ -1,0 +1,72 @@
+<section class="container ff-crimson-pro criar-passagem">
+  <header class="header">
+    <h2>Adicione uma <br> passagem nova:</h2>
+  </header>
+  <form>
+    <label for="passagem">Passagem</label>
+    <input type="textarea" class="input" id="passagem" name="passagem" placeholder="Digite a passagem"
+      [value]="passagem.conteudo">
+    <!-- ⬆️[Property binding] Se não utilizarmos os colchetes, o Angular não vai renderizar o atributo.-->
+    <label for="autoria">Autoria ou fonte</label>
+    <input type="textarea" class="input" id="autoria" name="autoria"
+      placeholder="Insira o nome do(a) autor(a) ou fonte." [value]="passagem.autoria">
+
+    <label for="modelo">Selecione o modelo do card</label>
+    <div class="container-radio">
+
+      <div class="radio-modelo">
+        <label for="modelo1">
+          <input type="radio" id="modelo1" value="modelo1" name="modelo-card">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 1</span>
+        </label>
+        Prévia:
+        <div class="modelo modelo1 ff-inter">
+          <img src="../../../../assets/img/modelo1.png" alt="Aspas verde">
+          <p class="conteudo">{{ passagem.conteudo }}</p>
+          <p class="autoria"><b>{{ passagem.autoria }}</b></p>
+        </div>
+      </div>
+
+      <div class="radio-modelo">
+        <label for="modelo2">
+          <input type="radio" id="modelo2" value="modelo2" name="modelo-card">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 2</span>
+        </label>
+        Prévia:
+        <div class="modelo modelo2 ff-inter">
+          <img src="../../../../assets/img/modelo2.png" alt="Aspas azul claro">
+          <p class="conteudo">{{ passagem.conteudo }}</p>
+          <p class="autoria"><b>{{ passagem.autoria }}</b></p>
+        </div>
+      </div>
+
+      <div class="radio-modelo">
+        <label for="modelo3">
+          <input type="radio" id="modelo3" value="modelo3" name="modelo-card">
+          <div class="custom-radio">
+            <span></span>
+          </div>
+          <span>Modelo 3</span>
+        </label>
+        Prévia:
+        <div class="modelo modelo3 ff-inter">
+          <img src="../../../../assets/img/modelo3.png" alt="Aspas verde claro">
+          <p class="conteudo">{{ passagem.conteudo }}</p>
+          <p class="autoria"><b>{{ passagem.autoria }}</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="acoes">
+      <button (click)="salvarPassagem()" class="botao">Salvar</button>
+      <button routerLink="/listarPassagens" (click)="cancelar()" class="botao">Cancelar</button>
+      <!-- Event Binding
+      () ao lado de button, será exibida uma lista de comandos que o Angular pode "ouvir" e aplicar na página.-->
+    </div>
+  </form>
+</section>
