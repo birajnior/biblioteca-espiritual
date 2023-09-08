@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Passagem } from '../passagem';
 
 @Component({
   selector: 'app-criar-passagens',
@@ -6,8 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./criar-passagens.component.css'],
 })
 export class CriarPassagensComponent {
-  passagem = {
-    id: '1',
+  passagem: Passagem = {
+    id: 1,
     conteudo: 'Aprendendo Angular',
     autoria: 'DEV',
     modelo: '',

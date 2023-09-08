@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Passagem } from '../passagem';
 
 @Component({
   selector: 'app-passagem',
@@ -6,7 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./passagem.component.css'],
 })
 export class PassagemComponent {
-  @Input() passagem = {
+  @Input() passagem: Passagem = {
+    id: 0,
     conteudo:
       'Por isso não tema, pois estou com você; não tenha medo pois sou o seu Deus. Eu o fortalecerei e o ajudarei; eu o segurarei com a minha mão direita vitoriosa.',
     autoria: 'Isaías 41:10',
