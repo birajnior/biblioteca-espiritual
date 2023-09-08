@@ -3,11 +3,13 @@
   <p class="conteudo">{{ passagem.conteudo }}</p>
   <p class="autoria"><b>{{ passagem.autoria }}</b></p>
   <div class="acoes">
-    <button class="botao-editar">
-      <img src="../../../../assets/img/icone-editar.png" alt="Icone editar">
-    </button>
-    <button class="botao-excluir">
-      <img src="../../../../assets/img/icone-excluir.png" alt="Icone excluir">
-    </button>
+    <fa-icon class="botao-editar" [icon]="['fas', 'pen-to-square']"></fa-icon>
+    <!-- <button >
+       <img src="../../../../assets/img/icone-editar.png" alt="Icone editar">
+    </button> -->
+    <fa-icon class="botao-excluir" [icon]="['fas', 'trash-can']"></fa-icon>
+    <!-- <button >
+       <img src="../../../../assets/img/icone-excluir.png" alt="Icone excluir">
+    </button> -->
   </div>
 </div>

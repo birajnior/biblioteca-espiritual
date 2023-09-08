@@ -2,8 +2,8 @@
   display: flex;
   justify-content: flex-end
 }
-
 .botao-excluir {
+  color: #162425;
   border: none;
   cursor: pointer;
   margin-left: 5px;
@@ -11,6 +11,7 @@
 }
 
 .botao-editar {
+  color: #162425;
   border: none;
   cursor: pointer;
   margin-right: 10px;
@@ -51,6 +52,7 @@
 .passagem-p {
   width: 262px;
 }
+
 
 @media screen and (max-width: 768px) {
   .passagem-g {
